@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+/*clear fix*/
+.clear:after{
+	content:"";
+	clear:both;
+	display: block;
+}
+/*main container*/
+div.page{
+	width: 900px;
+	margin: 0 auto;
+}
+div.container{
+	width: 100%;
+	background-image: url("../image/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	outline:15px solid white;
+}
+div.menu{
+	height: 100px;
+	background-color: turquoise;
+}
+div > div.sidebar{
+	height: 300px;
+	width: 200px;
+	background-color: #ff944d;	
+	color: white;
+	float: left;
+	outline:15px solid white;
+}
+div > div.content{
+	height: 100%;
+	width: 700px;
+	background-color:#ff5050;
+	color: white;
+	font-family: sans-serif;
+	float: left;
+	padding: 20px;
+	outline:15px solid white;
+}
+div > div.content > img.article-image{
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	margin-right: 20px;
+	float: left;
+}
+div > div.content > cite{
+	float: right;
+}
+div.footer{
+	background-color: skyblue;
+}
+div.footer > div.footer-items{
+	width: 30.8%;
+	background-color: #6699ff;
+	margin: 13px 1.15%;
+	float: left;
+	padding: 10px;
+	border-radius: 10px;
+}
+div.footer > div.footer-items > div.item-avatar{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-color: white;
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+div.footer > div.footer-items > h3.item-username{
+	width: 80%;
+	margin-bottom: 10px;
+	float: left;
+}
+div.footer > div.footer-items > p.item-comment{
+	width: 80%;
+	overflow: hidden;
+}
